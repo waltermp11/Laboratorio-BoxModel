@@ -4,9 +4,9 @@
     --font-color: white;
     --background-color-target: #03024D;
     --font-size-titles: 20px;
-    --background-color-footer: #0706AF;
-    --background-color-box:#e0fbfc;
-    --font-color-boxe:#01011B;
+    --background-color-2: #0d6efd;
+    --background-color-box: #e0fbfc;
+    --font-color-boxe: #01011B;
 
 
 
@@ -27,6 +27,28 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.insignia-1 {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 25px;
+
+    background: var(--background-color-2);
+    color: white;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .4);
+
+    z-index: 3;
 }
 
 
@@ -63,7 +85,7 @@ header {
 
 }
 
-.menu a:hover{
+.menu a:hover {
     background-color: var(--background-color-target);
     color: var(--font-color);
 }
@@ -96,12 +118,12 @@ header {
     margin-right: 30px;
 }
 
-.banner-texto h1{
+.banner-texto h1 {
     font-size: 2.8rem;
     margin-bottom: 10px;
 }
 
-.banner-texto p{
+.banner-texto p {
     font-size: 1.2rem;
 }
 
@@ -137,25 +159,27 @@ main {
     align-items: center;
 
 }
-.contenedor-imagen{
+
+.contenedor-imagen {
     position: relative;
 }
 
-.insignia{
-   position: absolute;
+
+.insignia-2 {
+    position: absolute;
     bottom: 0px;
     right: 0px;
     display: flex;
     align-items: center;
     gap: .5rem;
     padding: 12px 20px;
-    background: #0d6efd;
+    background: green;
     color: white;
     border-radius: 25px;
     font-weight: 600;
-    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
     z-index: 2;
-    
+
 }
 
 .informacion-credencial {
@@ -168,15 +192,19 @@ main {
 
 
 
-.informacion-credencial-0, .informacion-credencial-1,.informacion-credencial-2, .informacion-credencial-3{
-background-color: var(--background-color-box);
-color: var(--font-color-boxe);
-padding: 1rem 1rem;
-border-radius: 1rem;
-width: fit-content;
+.informacion-credencial-0,
+.informacion-credencial-1,
+.informacion-credencial-2,
+.informacion-credencial-3 {
+    background-color: var(--background-color-box);
+    color: var(--font-color-boxe);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    width: fit-content;
 
 
 }
+
 .informacion-credencial p,
 .informacion-credencial li {
     font-size: 18px;
@@ -197,18 +225,17 @@ width: fit-content;
 
 
 footer {
-background-color: var(--background-color-footer);
-height: 300px;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-gap: 3rem;
+    background-color: var(--background-color-2);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 
-.redes a{
+.redes a {
     text-decoration: none;
     color: var(--font-color);
 }
-
