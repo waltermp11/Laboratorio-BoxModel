@@ -1,0 +1,214 @@
+:root {
+
+    --background-color: #01011B;
+    --font-color: white;
+    --background-color-target: #03024D;
+    --font-size-titles: 20px;
+    --background-color-footer: #0706AF;
+    --background-color-box:#e0fbfc;
+    --font-color-boxe:#01011B;
+
+
+
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: "Fira Code", monospace;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    font-size: var(--font-size-titles);
+    margin: 20px;
+    padding: 1rem;
+    gap: 3rem;
+
+}
+
+.menu a {
+
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 30px;
+    background-color: white;
+    color: var(--background-color-target);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+
+}
+
+.menu a:hover{
+    background-color: var(--background-color-target);
+    color: var(--font-color);
+}
+
+.banner {
+
+    position: relative;
+    width: 100%;
+    margin: 0;
+
+
+}
+
+.imagen-banner {
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: var(--font-color);
+    background: rgba(1, 1, 27, .65);
+    padding: 30px 30px;
+    border-radius: 15px;
+    margin-right: 30px;
+}
+
+.banner-texto h1{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.banner-texto p{
+    font-size: 1.2rem;
+}
+
+
+main {
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 300px 0px;
+
+}
+
+.credencial-digital {
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-color: white;
+    border-style: double;
+    color: var(--font-color);
+    padding: 1rem 2rem;
+
+
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contenedor-imagen{
+    position: relative;
+}
+
+.insignia{
+   position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 12px 20px;
+    background: #0d6efd;
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+    z-index: 2;
+    
+}
+
+.informacion-credencial {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+
+.informacion-credencial-0, .informacion-credencial-1,.informacion-credencial-2, .informacion-credencial-3{
+background-color: var(--background-color-box);
+color: var(--font-color-boxe);
+padding: 1rem 1rem;
+border-radius: 1rem;
+width: fit-content;
+
+
+}
+.informacion-credencial p,
+.informacion-credencial li {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.lista-informacion-credencial-3 {
+    list-style: none;
+}
+
+.imagen-persona {
+    width: 420px;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+
+footer {
+background-color: var(--background-color-footer);
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 3rem;
+}
+
+
+.redes a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
